@@ -59,7 +59,7 @@ plugins:
   - id: dev.mcpg.backend.llm.gemini
     class: backend
     source:
-      oci: ghcr.io/mcpg-dev/source-code/plugins/backend-llm-gemini:protocol-1
+      oci: ghcr.io/mcpg-dev/plugins/backend-llm-gemini
 
 mcp:
   capabilities:
