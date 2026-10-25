@@ -253,6 +253,10 @@ mcpg_plugin_sdk::declare_plugin! {
     // defaults. One profile covers every backend entity this crate exports.
     backend_profile: ::mcpg_plugin_protocol::manifest::BackendProfile {
         dynamic_list: true,
+        usage_reporting_kinds: ::std::vec![
+            "gemini.chat".to_owned(),
+            "gemini.embedding".to_owned(),
+        ],
         ..::core::default::Default::default()
     },
     entities: [
